@@ -47,7 +47,8 @@ app.Animation = (function () {
 	function start() {
 
 		tl.to(footballWindow, .5, {x:"-=20", opacity: 0}, "+=4")
-		.to(txt1, .5, {x:"-=20", opacity: 1, ease: Sine.easeOut})
+            .to(logo, .5, {x:"-=20", opacity: 1, ease: Sine.easeOut})
+            .to(txt1, .5, {x:"-=20", opacity: 1, ease: Sine.easeOut}, "-=.25")
 		.to(txt1, .5, {x:"-=20", opacity: 0, ease: Sine.easeIn}, "+=2")
 
 		.to(cup1, .5, {x:"-=20", opacity: 1, ease: Sine.easeOut})
@@ -76,7 +77,7 @@ app.Animation = (function () {
 		.to(txt3, .5, {x:"-=20", opacity: 0, ease: Sine.easeOut}, "-=.25")
 		.to(txt4, .5, {x:"-=20", opacity: 1, ease: Sine.easeOut}, "-=.25");
 
-		
+
 
 	}
 
